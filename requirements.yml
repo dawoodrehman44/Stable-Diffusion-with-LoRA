@@ -1,0 +1,31 @@
+name: aaai26conf_env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - huggingface
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pillow
+  - tqdm
+  - pip
+  - pytorch
+  - torchvision
+  - cudatoolkit=11.8
+  - pip:
+      - einops
+      - timm
+      - opencv-python
+      - captum
+      - diffusers
+      - accelerate
+      - peft
+      - transformers
+      - pytorch-grad-cam
+      - torcheval

@@ -1,0 +1,23 @@
+{
+  "model": {
+    "backbone": "resnet50",
+    "source": "cxr_clip",
+    "pretrained": true,
+    "freeze_backbone": false,
+    "n_class": 14
+  },
+  "training": {
+    "optimizer": "adam",
+    "scheduler": "cosine_annealing",
+    "epochs": 100,
+    "early_stopping_min_epochs": 50,
+    "criterion": "bce_with_logits_loss",
+    "weight_decay": 1e-4
+  },
+  "evaluation": {
+    "metrics": ["auc", "fpr", "tpr", "precision", "ece", "bce", "error"]
+  },
+  "checkpoint": {
+    "load_backbone_weights": "checkpoints/cxrclip_mc/r50_mc.pt"
+  }
+}

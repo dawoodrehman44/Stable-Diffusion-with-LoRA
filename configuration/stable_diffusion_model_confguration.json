@@ -1,0 +1,26 @@
+{
+  "model": {
+    "base_model": "runwayml/stable-diffusion-v1-5",
+    "image_size": 512,
+    "text_embedding_dim": 77,
+    "use_lora": true,
+    "lora_config": {
+      "r": 4,
+      "alpha": 16,
+      "dropout": 0.1,
+      "target_modules": ["to_q", "to_k", "to_v"],
+      "bias": "none"
+    }
+  },
+  "training": {
+    "epochs": 200,
+    "batch_size": 4,
+    "learning_rate": 5e-5,
+    "weight_decay": 1e-4,
+    "optimizer": "adamw"
+  },
+  "data": {
+    "image_root": "your_image_folder/",
+    "data_csv": "your_data.csv"
+  }
+}
