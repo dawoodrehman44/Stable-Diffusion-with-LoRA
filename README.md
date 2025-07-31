@@ -1,7 +1,7 @@
 #  Training Chest X-ray Models with Stable Diffusion-Synthesized Images to Promote Fairness and Performance
 
 <p align="center">
-  <img src="Figures/StabbleDiffusionwithLoRA.png" alt="Proposed Methodology" width="1600"/>
+  <img src="Figures/StabbleDiffusionwithLoRA.png" alt="Proposed Methodology" width="1000"/>
 </p>
 
 ## Highlights
