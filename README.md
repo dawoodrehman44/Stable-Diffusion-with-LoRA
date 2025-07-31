@@ -1,5 +1,30 @@
 #  Training Chest X-ray Models with Stable Diffusion-Synthesized Images to Promote Fairness and Performance
 
+
+## Highlights
+
+- Fine-tuned a Stable Diffusion model using LoRA for improved medical image representation.
+- Replaces complex U-Net training with efficient low-rank adaptation (LoRA) — no need to train the full denoising network from scratch.
+- Enhances disease classification performance in downstream deep learning models.
+- Improves model focus on disease-specific regions in chest X-rays.
+- Reduces disparity and promotes fairness across demographic subgroups (e.g., age, gender, race).
+
+---
+
+## Introduction
+
+This repository supports our AAAI 2026 submission on leveraging diffusion models for medical image understanding. We fine-tune a pre-trained Stable Diffusion model using LoRA to overcome the computational cost and complexity of full U-Net retraining in medical diffusion workflows. 
+
+Our approach targets the following core goals:
+
+- **Classification Boost**: Generate diffusion-guided features that improve disease classification accuracy.
+- **Focus Quality**: Encourage attention to disease-relevant regions through learned diffusion features.
+- **Fairness and Equity**: Improve fairness across demographic attributes by reducing disparity in model outputs.
+
+The codebase includes training scripts, inference pipelines, evaluation tools, and documentation for reproducing results on public datasets like CheXpert and MIMIC-CXR
+
+
+
 This repository contains two core training pipelines:
 
 - **Diffusion Training (`main_train_diffusion_model.py`)** — Fine-tunes Stable Diffusion v1.5 using LoRA on medical captions.
@@ -16,6 +41,7 @@ This repository contains two core training pipelines:
 ├── Data Pre-processing
 │   ├── data_pre_processing.py
 │   └── data_pre_processing_real_synthetic_datasets.py
+├── Figures
 ├── evalaution_metrics_FID_KID.py
 ├── evaluation_metrics_for_focus_observation.py
 ├── evaluation_metrics.py
