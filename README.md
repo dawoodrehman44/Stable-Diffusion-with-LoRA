@@ -142,3 +142,10 @@ python main_train_classification.py
 ## Evaluation
 
 Evaluation metrics are implemented in `evaluation_metrics.py`:
+
+## 🤝 Acknowledgments
+We thank the creators of CheXpert, MIMIC-CXR, and Chest Xray14 datasets and all the models used in this work, for making them publicly available to the community.
+
+## Contact
+For questions or collaborations, please contact: 
+Dawood Rehman – [dawoodrehman1297@gapp.nthu.edu.tw]
