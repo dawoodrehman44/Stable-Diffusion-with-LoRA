@@ -137,8 +137,6 @@ python main_train_classification.py
 - **Scheduler**: Cosine Annealing
 - **Weight Decay**: 1e-4
 - **Early Stopping**: min. 50 epochs, max. 100
-- **Metrics**: AUC, FPR, TPR, Precision, BCE, ECE, Error
-
 ---
 
 ## Evaluation
